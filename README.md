@@ -1,21 +1,17 @@
 # NOTION
 
----
-
 > [Notion](https://www.notion.so/) is an awesome productivity software, please do check it out.
-
----
 
 ## Contents
 
-1. [Problem Statement]()
-2. [Functional Requirements]()
-3. [Extended Requirements]()
-4. [Data Models]()
-   1. [Entities]()
-   2. [Relationships]()
-   3. [Attributes]()
-5. [Tasks]()
+1. [Problem Statement](#problem-statement)
+2. [Functional Requirements](#functional-requirements)
+3. [Extended Requirements](#extended-requirements)
+4. [Data Models](#data-models)
+   1. Entities
+   2. Relationships
+   3. Attributes
+5. [Tasks](#tasks)
 ---
 
 ## Problem Statement
@@ -58,7 +54,7 @@ Build Notion application i.e. all-in-one workspace for notes, docs, wikis, proje
 
 ## Data Models
 
-### Entities
+### 1. Entities
 
 - User
 - Page
@@ -66,7 +62,7 @@ Build Notion application i.e. all-in-one workspace for notes, docs, wikis, proje
 - Comment _(Future Scope)_
 - PageAccess _(Future Scope)_
 
-### Relationships
+### 2. Relationships
 
 - User is independent entity
 - Page is dependent on User & the Page itself
@@ -81,7 +77,7 @@ Build Notion application i.e. all-in-one workspace for notes, docs, wikis, proje
     - User (1 : N) PageAccess
     - Page (1 : N) PageAccess
 
-### Attributes
+### 3. Attributes
 
 - **Users**
   - id _(auto generated)_
