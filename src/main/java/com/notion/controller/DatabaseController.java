@@ -9,19 +9,21 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.util.Map;
 
+import static com.notion.constants.Constants.Path.*;
+
 @RestController
-@RequestMapping("/database")
+@RequestMapping(DATABASE_ENDPOINT)
 public class DatabaseController {
 
     @Autowired
     private DatabaseService databaseService;
 
-    @RequestMapping(method = RequestMethod.POST, value = "/import")
+    @RequestMapping(method = RequestMethod.POST, value = IMPORT)
     public ResponseEntity<Map<String, Integer>> importData() {
         return ResponseEntity.ok(databaseService.importData());
     }
 
-    @RequestMapping(method = RequestMethod.POST, value = "/export")
+    @RequestMapping(method = RequestMethod.POST, value = EXPORT)
     public ResponseEntity<Map<String, Integer>> exportData() {
         return ResponseEntity.ok(databaseService.exportData());
     }

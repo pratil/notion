@@ -24,13 +24,14 @@ Build Notion application i.e. all-in-one workspace for notes, docs, wikis, proje
 
 * Users can create/modify/delete multiple ***pages***.
 * A page can have multiple nesting, i.e. a page can contain ***multiple pages***.
-* User can mark amy page as favourite.
+* User can mark any page as favourite.
 * User can create/modify/delete a ***block*** of information.
 * Every page consists of one or more blocks of information.
-* Blocks are stored in an ordered, which can be reordered at any time.
+* Blocks are stored in order, which can be reordered at any time.
 * Blocks can be of different types:
   * **Text Block:** Contains plain texts.
-  * **Heading Block:** Contains plain text which is displayed bold and big, there can be different sub-type of headings based on the size of the heading.
+  * **Heading Block:** Contains plain text which is displayed bold and big, there can be different sub-type of headings
+    based on the size of the heading.
   * **Todo Block:** Contains plain text with a checkbox.
   * **List Block:** Contains items list, can be ordered or unordered list.
   * **Page Link Block** Contains the link of the child page.
@@ -44,7 +45,7 @@ Build Notion application i.e. all-in-one workspace for notes, docs, wikis, proje
 * Blocks can have nesting.
 * Toggle List BLock
 * Search the pages based on the page name.
-* Search the content based on any of the content inside the page.
+* Search the pages based on any of the content inside the page.
 * Users add a comment to a block.
 * Users to be able to share pages with other users.
   * Shared pages maybe hai different access, like read only, comment only, etc.
@@ -86,6 +87,7 @@ Build Notion application i.e. all-in-one workspace for notes, docs, wikis, proje
   - First Name
   - Middle Name
   - Last Name
+  - Preferred Name
   - Email Id
   - Password
 - **Pages**

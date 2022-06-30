@@ -10,7 +10,6 @@ import org.springframework.data.mongodb.core.mapping.Field;
 import org.springframework.data.mongodb.core.mapping.FieldType;
 import org.springframework.data.mongodb.core.mapping.MongoId;
 
-import javax.persistence.Transient;
 import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.NotNull;
 import java.io.Serializable;
@@ -43,6 +42,12 @@ public class Page implements Serializable {
 
     @Field("updated_at")
     private Long updatedAt;
+
+    @Field("active")
+    public Boolean isActive;
+
+    @Field("public")
+    private Boolean isPublic;
 
     public Page(String title, Boolean isFavourite, String parentPageId) {
         this.title = title;

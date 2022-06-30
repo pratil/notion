@@ -45,8 +45,8 @@ public class PagesService {
 
     public PageDto deletePage(String id) {
         Page page = getPageById(id);
-        pagesRepository.delete(page);
-        return new PageDto(page);
+        page.setIsActive(false);
+        return new PageDto(pagesRepository.save(page));
     }
 
     public List<PageDto> getAllPageDTOs(Boolean isFavourite) {
